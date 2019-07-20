@@ -6,11 +6,10 @@
 	font-family: sans-serif;
 	}
 
-/*body{
-	background: url(../img/template01.jpg);
-	background-position: top center;
-	height: 1080px;
-	}*/
+body{
+	background: url(../img/background.jpg);
+	background-repeat: repeat;
+	}
 
 /*---CABEZOTE---*/
 
@@ -19,6 +18,7 @@ header{
 	margin: auto;
 	width: 1000px;
 	height: 83px;
+	background: url(../img/cabezote.jpg);
 	}
 
 #logo{
@@ -27,7 +27,6 @@ header{
 	left: 16px;
 	width: 188px;
 	height: 47px;
-	background: rgba(0,0,255,.5);
 	}
 
 /*---FIN CABEZOTE---*/
@@ -39,7 +38,8 @@ nav{
 	margin: auto;
 	width: 1000px;
 	height: 45px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid lightgrey;
+	background: url(../img/nav.jpg);
 	}
 
 nav ul{
@@ -48,7 +48,6 @@ nav ul{
 	left: 0px;
 	width: 500px;
 	height: 45px;
-	background: rgba(0,255,0,.5);
 	}
 
 nav ul li{
@@ -58,8 +57,7 @@ nav ul li{
 	text-align: center;
 	font-size: 14px;
 	color: white;
-	background: rgba(0,0,255,.5);
-	border-right: 1px solid white;
+	border-right: 1px solid lightgrey;
 	}
 /*---FIN BARRA NAVEGACION---*/
 
@@ -81,6 +79,7 @@ nav ul li{
 	margin: auto;
 	width: 1000px;
 	height: 26px;
+	background: url(../img/backBotonesSlide.jpg);
 	}
 
 #botoneraSlide ul{
@@ -102,40 +101,224 @@ nav ul li{
 
 /*--------FIN BOTONERA SLIDE--------*/
 
-/*---SECCION---*/
+/*---SECCION INICIO---*/
 
-section{
+section#inicio{
 	position: relative;
 	margin: auto;
 	width: 1000px;
 	height: 299px;
+	background: white;
 	}
 
-section ul li{
+section#inicio ul li{
 	float: left;
 	width: 333px;
 	height: 299px;
 	}
 
-section ul li h1{
+section#inicio ul li h1{
 	margin: 24px 27px;
 	font-weight: 100;
 	font-size: 25px;
 	}
 
-section ul li p{
+section#inicio ul li p{
 	margin: 23px 28px;
 	font-size: 15px;
 	}
 
-section ul li img{
+section#inicio ul li img{
 	width: 272px;
 	height: 82px;
 	background: lightgray;
 	margin: 1px 30px; 
 	}
 
-/*---FIN SECCION---*/
+/*---FIN SECCION INICIO---*/
+
+/*---SECCION NOSOTROS---*/
+
+section#nosotros{
+	position: relative;
+	margin: auto;
+	width: 1000px;
+	height: 299px;
+	background: white;
+	}
+
+section#nosotros h1{
+	position: relative;
+	top: 15px;
+	left: 27px;
+	font-weight: 100;
+	}
+
+section#nosotros hr{
+	position: relative;
+	top: 20px;
+	width: 950px;
+	margin: auto;
+	border: 1px solid grey;
+	}
+
+section#nosotros p{
+	position: relative;
+	top: 40px;
+	width: 950px;
+	margin: auto;
+	text-align: justify;
+	}
+
+section#nosotros p img{
+	float: left;
+	width: 272px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	}
+
+/*---FIN SECCION NOSOTROS---*/
+
+/*---SECCION SERVICIOS---*/
+
+section#servicios{
+	position: relative;
+	margin: auto;
+	width: 1000px;
+	height: 299px;
+	background: white;
+	}
+
+section#servicios #cajaServicios{
+	position: relative;
+	margin: auto;
+    top: 18px;
+    width: 936px;
+    height: 262px;
+	box-shadow: 0px 0px 25px #222;/* ejeX ejeY intensidad color */
+	}
+
+section#servicios #cajaServicios ul#listado{
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	width: 151px;
+	cursor: pointer;
+	}
+
+section#servicios #cajaServicios ul#listado li{
+	width: 151px;
+	height: 72px;
+	margin: 2px 0;
+	}
+
+section#servicios #cajaServicios ul#visor{
+	position: absolute;
+	top: 19px;
+    right: 21px;
+    width: 731px;
+    height: 222px;
+	}
+
+section#servicios #cajaServicios ul#visor li{
+	position: absolute;
+	top: 0px;
+    left: 0px;
+    width: 731px;
+    height: 222px;
+	}
+
+section#servicios #cajaServicios ul#visor li h1{
+	position: absolute;
+	z-index: 1; /* pone al titulo por encima de la imagen */
+	top: 18px;
+	left: 18px;
+	font-weight: 100;
+    }
+
+section#servicios #cajaServicios ul#visor li p{
+	position: absolute;
+	z-index: 1; /* pone al titulo por encima de la imagen */
+	bottom: 0;
+	color: white;
+	background: rgba(0,0,0,.7);
+	width: 97.3%;
+	line-height: 60px; /* alinear el texto en vertical 60px */
+	padding-left: 20px;
+	}
+
+/*---FIN SECCION SERVICIOS---*/
+
+/*---SECCION CONTACTO---*/
+
+section#contacto{
+	position: relative;
+	margin: auto;
+	width: 1000px;
+	height: 299px;
+	background: white;
+	}
+
+section#contacto form{
+	position: relative;
+	margin: auto;
+    width: 910px;
+    height: 232px;
+    top: 32px;
+	}
+
+section#contacto form input#nombre{
+	position: absolute;
+	padding: 10px;
+    width: 272px;
+    height: 45px;
+    background: #dce9d7;
+    border: 0;
+	}
+
+section#contacto form input#email{
+	position: absolute;
+	padding: 10px;
+	top: 81px;
+    width: 272px;
+    height: 45px;
+    background: #dce9d7;
+    border: 0;
+	}
+
+section#contacto form input#asunto{
+	position: absolute;
+	padding: 10px;
+	bottom: 0px; /* top: 163px; papa aprobechar posicion absoluta usamos bottom*/
+    width: 272px;
+    height: 45px;
+    background: #dce9d7;
+    border: 0;
+	}
+
+section#contacto form #mensaje{
+	position: absolute;
+	padding: 10px;
+	right: 0px;
+    width: 582px;
+    height: 128px;
+    background: #dce9d7;
+    border: 0;
+	}
+
+section#contacto form input#enviar{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+    width: 604px;
+    height: 69px;
+    background: #1a1d20;
+    color: white;
+    border: 0;
+    cursor: pointer;
+	}
+
+/*---FIN SECCION CONTACTO---*/
 
 /*---BOTTOM---*/
 
@@ -144,6 +327,7 @@ section ul li img{
 	margin: auto;
 	width: 1000px;
 	height: 190px;
+	background: url(../img/backBottom.jpg);
 	}
 
 #bottom ul li{
@@ -173,6 +357,7 @@ section ul li img{
 	list-style: inside;
 	font-size: 15px;
 	color: white;
+	list-style-image: url(../img/list.png);
 	}
 
 #bottom ul li img{
@@ -182,6 +367,8 @@ section ul li img{
 	height: 95px;
 	width: 95px;
 	border: 3px solid white;
+	background: url(../img/imgGaleria.jpg);
+	background-size: cover;
 	}
 
 #bottom ul li ul{
@@ -198,8 +385,34 @@ section ul li img{
 	width: 40px;
 	height: 40px;
 	border-radius: 100%;
-	background: tomato;
 	margin: 5px;
+	}
+
+#bottom ul li ul li:first-child{
+	background: url(../img/facebook.jpg);
+	background-size: cover;
+	}
+
+#bottom ul li ul li:nth-child(2){
+	background: url(../img/iconoGoogle.jpg);
+	background-size: cover;
+	}
+
+#bottom ul li ul li:nth-child(3){
+	background: url(../img/iconoPinterest.jpg);
+	background-size: cover;
+	}
+
+#bottom ul li ul li:last-child{
+	background: url(../img/iconoTwitter.jpg);
+	background-size: cover;
+	}	
+
+#bottom ul li ul li a{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
 	}
 /*--------FIN BOTTOM--------*/
 
@@ -214,6 +427,7 @@ footer{
 	color: white;
 	line-height: 62px;
 	font-size: 15px;
+	background: black;
 	}
 
 /*--------FIN FOOTER--------*/
